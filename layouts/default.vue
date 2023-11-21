@@ -1,14 +1,14 @@
 <template>
     <div :class="{ 'dark': isDarkMode }" @scroll="handleScroll" ref="containerRef" class="max-h-screen overflow-auto">
         <header :class="{ 'show': scrolledDown, 'bg-opacity-75': scrolledUp }"
-            class="fixed w-full top-0 z-10 py-3 bg-gradient-to-t dark:from-gray-50/10 dark:to-gray-50/0 from-gray-900/10 to-gray-50/0 dark:text-white transition-opacity">
+            class="fixed w-full top-0 z-10 py-2 bg-gradient-to-t dark:from-gray-50/10 dark:to-gray-50/0 from-gray-900/10 to-gray-50/0 dark:text-white transition-opacity">
             <div class="container mx-auto">
                 <div class="flex justify-between items-center">
                     <router-link to="/" class="text-2xl font-semibold">Bajrul Hakimi</router-link>
                     <ul class="flex space-x-5 ml-auto mr-10">
-                        <li><router-link to="/home">Home</router-link></li>
+                        <li><router-link to="/">Home</router-link></li>
                         <li><router-link to="/about">About</router-link></li>
-                        <li><router-link to="/skills">Skill</router-link></li>
+                        <li><router-link to="/skill">Skill</router-link></li>
                         <li><router-link to="/contact">Contact</router-link></li>
                     </ul>
                     <UseDark v-slot="{ isDark, toggleDark }">
